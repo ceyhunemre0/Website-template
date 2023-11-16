@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Rilika01">
-    <title>Template</title>
-
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mimarlık Web Sitesi</title>
 </head>
 <body>
-    
-    <nav>
-        <div class="container">
-            <div id="logo-box">
-                <a href="/" class="logo">
-                    Nav Bar
-                </a>
-            </div>
-        </div>
-    </nav>
 
+  <nav class="navbar">
+    <div class="logo">Logo</div>
+    <ul class="nav-list">
+      <li><a href="#">Ana Sayfa</a></li>
+      <li><a href="#">Projeler</a></li>
+      <li><a href="#">Hizmetler</a></li>
+      <li><a href="#">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1>Hoş Geldiniz!</h1>
+    <p>Mimarlık projelerimizi keşfedin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo id urna efficitur commodo ac a libero. Duis accumsan libero id orci tristique, nec iaculis sem pellentesque.</p>
+    
+    
+    <h2>En Son Projelerimiz</h2>
+    <div class="container">
+    <div class="project" onmouseover="showDescription('description1')" onmouseout="hideDescription('description1')">
+      <img src="project1.jpg" alt="Proje 1">
+      <div id="description1" class="description">Açıklama projenin açıklaması...</div>
+    </div>
+    
+    <div class="project" onmouseover="showDescription('description2')" onmouseout="hideDescription('description2')">
+      <img src="project2.jpg" alt="Proje 2">
+      <div id="description2" class="description">Açıklama projenin açıklaması...</div>
+    </div>
+
+    <div class="project" onmouseover="showDescription('description3')" onmouseout="hideDescription('description3')">
+      <img src="project2.jpg" alt="Proje 3">
+      <div id="description3" class="description">Açıklama projenin açıklaması...</div>
+    </div>
+    <div class="project" onmouseover="showDescription('description4')" onmouseout="hideDescription('description4')">
+      <img src="project2.jpg" alt="Proje 4">
+      <div id="description4" class="description">Açıklama projenin açıklaması...</div>
+    </div>
+    <div class="project" onmouseover="showDescription('description5')" onmouseout="hideDescription('description5')">
+      <img src="project1.jpg" alt="Proje 5">
+      <div id="description5" class="description">Açıklama projenin açıklaması...</div>
+    </div>
+    <div class="project" onmouseover="showDescription('description6')" onmouseout="hideDescription('description6')">
+      <img src="project2.jpg" alt="Proje 6">
+      <div id="description6" class="description">Açıklama projenin açıklaması...</div>
+    </div>
+    <div class="project" onmouseover="showDescription('description7')" onmouseout="hideDescription('description7')">
+      <img src="project1.jpg" alt="Proje 7">
+      <div id="description7" class="description">Açıklama projenin açıklaması...</div>
+    </div>
+  </div>
+</div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
