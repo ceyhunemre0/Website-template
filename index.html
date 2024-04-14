@@ -1,63 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <title>Mimarlık Web Sitesi</title>
 </head>
+
 <body>
 
-  <nav class="navbar">
-    <div class="logo">Logo</div>
-    <ul class="nav-list">
-      <li><a href="#">Ana Sayfa</a></li>
-      <li><a href="#">Projeler</a></li>
-      <li><a href="#">Hizmetler</a></li>
-      <li><a href="#">İletişim</a></li>
-    </ul>
+  <nav id="nav">
+    <div class="navbar clearfix">
+      <div class="logo">LOGO</div>
+      <ul class="nav-list">
+      <!--  <li><a href="#"><i class="fas fa-bars"></i></a></li> -->
+        <li><a href="#">Ana Sayfa</a></li>
+        <li><a href="#projects_for_href">Projeler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="content">
-    <h1>Hoş Geldiniz!</h1>
-    <p>Mimarlık projelerimizi keşfedin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo id urna efficitur commodo ac a libero. Duis accumsan libero id orci tristique, nec iaculis sem pellentesque.</p>
-    
-    
-    <h2>En Son Projelerimiz</h2>
+
+  <header class="content clearfix">
+    <section class="header">
+      <h1>Hoş Geldiniz!</h1>
+      <p>Mimarlık projelerimizi keşfedin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        Nullam eget justo id urna efficitur commodo ac a libero. Duis accumsan libero id orci tristique,
+        nec iaculis sem pellentesque.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Temporibus, repudiandae reiciendis ipsam
+        iure enim cupiditate!</p>
+    </section>
+  </header>
+
+
+  <section class="projects" id="projects_for_href">
     <div class="container">
-    <div class="project" onmouseover="showDescription('description1')" onmouseout="hideDescription('description1')">
-      <img src="project1.jpg" alt="Proje 1">
-      <div id="description1" class="description">Açıklama projenin açıklaması...</div>
-    </div>
-    
-    <div class="project" onmouseover="showDescription('description2')" onmouseout="hideDescription('description2')">
-      <img src="project2.jpg" alt="Proje 2">
-      <div id="description2" class="description">Açıklama projenin açıklaması...</div>
-    </div>
+      <div id="project-images">
+        <div class="col">
+          <div class="project-item">
+            <a href="#">
+              <img src="photos/expo2017_1.jpg" class="img-fluid">
+              <div class="img-overlay">
+              </div>
+              <div class="image-title">
+                <h1>Expo 2017</h1>
+                <p>
+                  Astana, Kazakhstan
+                </p>
+              </div>
+            </a>
+          </div>
 
-    <div class="project" onmouseover="showDescription('description3')" onmouseout="hideDescription('description3')">
-      <img src="project2.jpg" alt="Proje 3">
-      <div id="description3" class="description">Açıklama projenin açıklaması...</div>
+          <div class="project-item">
+            <a href="#">
+              <img src="photos/expo2017_2.jpg" class="img-fluid">
+              <div class="img-overlay">
+              </div>
+              <div class="image-title">
+                <h1>Expo 2017</h1>
+                <p>
+                  Astana, Kazakhstan
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="#">
+              <img src="bird_2.jpg" class="img-fluid">
+              <div class="img-overlay">
+              </div>
+              <div class="image-title">
+                <h1>photos from google</h1>
+                <p>
+                  GOOGLE IMAGES
+                </p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="project-item">
+            <a href="#">
+              <img src="photos/expo2017_3.jpg" class="img-fluid">
+              <div class="img-overlay">
+              </div>
+              <div class="image-title">
+                <h1>Expo 2017</h1>
+                <p>
+                  Astana, Kazakhstan
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="#">
+              <img src="photos/expo2017_1.jpg" class="img-fluid">
+              <div class="img-overlay">
+              </div>
+              <div class="image-title">
+                <h1>Expo 2017</h1>
+                <p>
+                  Astana, Kazakhstan
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="#">
+              <img src="arc.png" class="img-fluid">
+              <div class="img-overlay">
+              </div>
+              <div class="image-title">
+                <h1>ARC FROM GOOGLE</h1>
+                <p>
+                  GOOGLE IMAGES
+                </p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="col">
+          <div class="project-item">
+            <a href="#">
+              <img src="photos/expo2017_2.jpg" class="img-fluid">
+              <div class="img-overlay">
+              </div>
+              <div class="image-title">
+                <h1>Expo 2017</h1>
+                <p>
+                  Astana, Kazakhstan
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="#">
+              <img src="photos/expo2017_3.jpg" class="img-fluid">
+              <div class="img-overlay">
+              </div>
+              <div class="image-title">
+                <h1>Expo 2017</h1>
+                <p>
+                  Astana, Kazakhstan
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="#">
+              <img src="arc.png" class="img-fluid">
+              <div class="img-overlay">
+              </div>
+              <div class="image-title">
+                <h1>photos from google</h1>
+                <p>
+                  GOOGLE IMAGES
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="project" onmouseover="showDescription('description4')" onmouseout="hideDescription('description4')">
-      <img src="project2.jpg" alt="Proje 4">
-      <div id="description4" class="description">Açıklama projenin açıklaması...</div>
+  </section>
+
+  <div class="clearfix"></div>
+
+  <footer>
+    <div class="container">
+      <div class="col">
+        <h4 class="text-uppercase" id="contact">Contact</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="col">
+        <h4 class="text-uppercase">Around The Web</h4>
+        <ul>
+          <li>
+            <button class="btn btn-outline btn-social">
+              <i class="fab fa-instagram"></i>
+            </button>
+            <button class="btn btn-outline btn-social">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+            <button class="btn btn-outline btn-social">
+              <i class="fab fa-twitter"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="text-uppercase">About Us</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
     </div>
-    <div class="project" onmouseover="showDescription('description5')" onmouseout="hideDescription('description5')">
-      <img src="project1.jpg" alt="Proje 5">
-      <div id="description5" class="description">Açıklama projenin açıklaması...</div>
-    </div>
-    <div class="project" onmouseover="showDescription('description6')" onmouseout="hideDescription('description6')">
-      <img src="project2.jpg" alt="Proje 6">
-      <div id="description6" class="description">Açıklama projenin açıklaması...</div>
-    </div>
-    <div class="project" onmouseover="showDescription('description7')" onmouseout="hideDescription('description7')">
-      <img src="project1.jpg" alt="Proje 7">
-      <div id="description7" class="description">Açıklama projenin açıklaması...</div>
-    </div>
+  </footer>
+
+  <div class="copyrigth">
+    <small>
+      CopyRight &copy; 2023 by Rilika01 | All Rights Reserved
+    </small>
   </div>
-</div>
 
-  <script src="scripts.js"></script>
 </body>
+
 </html>
